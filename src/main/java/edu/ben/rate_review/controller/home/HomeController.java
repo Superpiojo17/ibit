@@ -16,6 +16,34 @@ public class HomeController {
 
 		return new ModelAndView(model, "home/home.hbs");
 	}
+	public static ModelAndView showContactUsPage(Request req, Response res) throws Exception {
+		// Just a hash to pass data from the servlet to the page
+		HashMap<String, Object> model = new HashMap<>();
+
+		return new ModelAndView(model, "home/contactus.hbs");
+	}
+
+	public static ModelAndView showPortfolioPage(Request req, Response res) throws Exception {
+		// Just a hash to pass data from the servlet to the page
+		HashMap<String, Object> model = new HashMap<>();
+
+		return new ModelAndView(model, "home/portfolio.hbs");
+	}
+
+	public static ModelAndView showServicesPage(Request req, Response res) throws Exception {
+		// Just a hash to pass data from the servlet to the page
+		HashMap<String, Object> model = new HashMap<>();
+
+		return new ModelAndView(model, "home/services.hbs");
+	}
+
+	public static ModelAndView showSupportPage(Request req, Response res) throws Exception {
+		// Just a hash to pass data from the servlet to the page
+		HashMap<String, Object> model = new HashMap<>();
+
+		return new ModelAndView(model, "home/support.hbs");
+	}
+
 
 	public static ModelAndView contact(Request req, Response res) {
 		HashMap<String, Object> model = new HashMap<>();
