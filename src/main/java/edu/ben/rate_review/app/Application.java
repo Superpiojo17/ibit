@@ -71,11 +71,11 @@ public class Application {
 		});
 
 		// path for the home page
-		get(CONTACTUS_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
+		get(CONTACTUS_PATH, HomeController::showContactUsPage, new HandlebarsTemplateEngine());
 		get(HOME_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
-		get(PORTFOLIO_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
-		get(SERVICES_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
-		get(SUPPORT_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
+		get(PORTFOLIO_PATH, HomeController::showPortfolioPage, new HandlebarsTemplateEngine());
+		get(SERVICES_PATH, HomeController::showServicesPage, new HandlebarsTemplateEngine());
+		get(SUPPORT_PATH, HomeController::showSupportPage, new HandlebarsTemplateEngine());
 		get(NOTFOUND_HOME_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
 		post(HOME_PATH, HomeController::contact);
 
