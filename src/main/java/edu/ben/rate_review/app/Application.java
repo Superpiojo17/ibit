@@ -15,11 +15,10 @@ public class Application {
 	// match up paths
 	public static String HOME_PATH = "/";
 	public static String NOTFOUND_HOME_PATH = "/notfound";
-	public static String CONTACTUS_PATH = "contactus";
-	public static String PORTFOLIO_PATH = "portfolio";
-	public static String SERVICES_PATH = "services";
-	public static String SUPPORT_PATH = "support";
-	
+	public static String CONTACTUS_PATH = HOME_PATH + "contactus";
+	public static String PORTFOLIO_PATH = HOME_PATH + "portfolio";
+	public static String SERVICES_PATH = HOME_PATH + "services";
+	public static String SUPPORT_PATH = HOME_PATH + "support";
 
 	public static void main(String[] args) throws Exception {
 
@@ -79,7 +78,6 @@ public class Application {
 		get(SUPPORT_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
 		get(NOTFOUND_HOME_PATH, HomeController::showHomePage, new HandlebarsTemplateEngine());
 		post(HOME_PATH, HomeController::contact);
-
 
 	}
 }
