@@ -1031,7 +1031,7 @@
 /* Banner */
 
 	#banner {
-		background-image:url(https://i.imgur.com/J0XC2wm.jpg);
+		background-image: url(../images/dark_tint.png), url(../images/test.jpg);
 		background-position: center center;
 		background-size: cover;
 		color: #ffffff;
