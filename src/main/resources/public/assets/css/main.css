@@ -2096,7 +2096,7 @@
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
-			background-image: url(https://imgur.com/YipaQZ2);
+			background-image: url("https://imgur.com/YipaQZ2");
 			content: '';
 			display: block;
 			height: 100%;
@@ -2507,7 +2507,7 @@
 
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url(https://imgur.com/YipaQZ2), url(https://imgur.com/oLIYOFP);
+		background-image: url("images/top-3200.svg"), url("https://imgur.com/YipaQZ2"), url("https://imgur.com/oLIYOFP");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
